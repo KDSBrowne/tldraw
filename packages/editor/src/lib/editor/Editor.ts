@@ -1470,6 +1470,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 			return {
 				data: { selectedShapeIds: ids, prevSelectedShapeIds },
 				preservesRedoStack: true,
+				ephemeral: true,
 				...historyOptions,
 			}
 		},
